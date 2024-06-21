@@ -1,8 +1,10 @@
 import { DocumentColorEnum } from "~/utils/colors";
 
 export enum DocumentType {
-  TenK = "Form 10K",
-  TenQ = "Form 10Q",
+  Report = "Report", // TenK
+  Observation = "Observation",  // TenQ
+  Weather = "Weather"
+
 }
 
 export type Ticker = {

@@ -5,8 +5,8 @@ import type { SelectOption } from "~/types/selection";
 import { filterByTickerAndType } from "./documents";
 
 export const documentTypeOptions = [
-  { value: DocumentType.TenK, label: DocumentType.TenK },
-  { value: DocumentType.TenQ, label: DocumentType.TenQ },
+  { value: DocumentType.Report, label: DocumentType.Report },
+  { value: DocumentType.Observation, label: DocumentType.Observation },
 ] as SelectOption[];
 
 function documentToYearOption(document: SecDocument): SelectOption {

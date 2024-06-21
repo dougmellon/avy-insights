@@ -14,9 +14,9 @@ export const fromBackendDocumentToFrontend = (
   .map((backendDoc, index) => {
     const backendDocType = backendDoc.metadata_map.sec_document.doc_type;
     const frontendDocType =
-      backendDocType === BackendDocumentType.TenK
-        ? DocumentType.TenK
-        : DocumentType.TenQ;
+      backendDocType === BackendDocumentType.Report
+        ? DocumentType.Report
+        : DocumentType.Observation;
 
     // we have 10 colors for 10 documents
     const colorIndex = index < 10 ? index : 0;

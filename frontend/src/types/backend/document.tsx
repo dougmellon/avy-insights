@@ -1,6 +1,6 @@
 export enum BackendDocumentType {
-  TenK = "10-K",
-  TenQ = "10-Q",
+  Report = "Report",
+  Observation = "Observation",
 }
 
 export interface BackendDocument {
